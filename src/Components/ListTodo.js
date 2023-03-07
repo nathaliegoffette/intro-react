@@ -20,7 +20,7 @@ const ListTodo = ({ todos, onToggle }) => {
     <ul className='div-list'>
       {todos.map((todo) => (
         <li key={todo.id}>
-            <Checkbox size='md' className="li-checkbox" colorScheme='orange' type="checkbox" checked={todo.completed} onChange={() => handleToggle(todo.id)} />
+            <Checkbox size='md' className="li-checkbox" colorScheme='pink' type="checkbox" checked={todo.completed} onChange={() => handleToggle(todo.id)} />
             {todo.newTodo}
         </li>
         ))}

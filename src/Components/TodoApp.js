@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import {Box} from '@chakra-ui/react';
 import { v4 as uuidv4 } from "uuid";
 import Header from './Header';
 import NewTask from './NewTask';
@@ -24,11 +25,11 @@ const TodoApp = () => {
   }, [todos]);
   
   return (
-    <div className='todoapp-div'>
+    <Box className='todoapp-div'   bgGradient='linear(red.200 0%, orange.200 25%, yellow.200 50%)' >
         <Header />
         <NewTask onAddTodo={handleAddTodo} onClearList={handleClearList} />
         <ListTodo todos={todos} onToggle={setTodos} />
-    </div>
+    </Box>
   );
 };
 

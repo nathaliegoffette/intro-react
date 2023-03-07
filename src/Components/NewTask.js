@@ -22,7 +22,7 @@ const NewTask = ({ onAddTodo, onClearList }) => {
       <Input className='input-new' bg='white' width='25rem' ref={inputRef} placeholder='New task' type="text"  />
       <div  className='div-btn'>
         <Button colorScheme='blue' className='btn-new' onClick={clickHandler}>Add</Button>
-        <Button colorScheme='orange' className='btn-clear' onClick={clearListHandler}>Clear list</Button>
+        <Button colorScheme='pink' className='btn-clear' onClick={clearListHandler}>Clear list</Button>
       </div>
     </div>
   );
